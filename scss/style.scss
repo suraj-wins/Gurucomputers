@@ -1,0 +1,323 @@
+@import './variables.scss';
+// services-offered// 
+.servicesOffered {
+    .standardSection {
+        padding: 50px 0;
+        text-align: center;
+        .webIcon {
+            width: 10%;
+            display: inline-block;
+            margin: 0 90px 30px 0px;
+            @media screen and (max-width: 991px) {
+                margin: 0 50px 30px 0px;
+            }
+            @media screen and (max-width: 480px) {
+                width: 16%;
+            }
+        }
+        .sectionHeading {
+            width: auto;
+            display: inline-block;
+            margin: 0 25px 0 0;
+            @media screen and (max-width: 767px) {
+                margin: 0 24px 40px 0;
+                h3 {
+                    margin: 0 0 15px 0;
+                }
+            }
+            h3 {
+                width: 100%;
+                font-family: 'poppinsmedium';
+                margin: 0 0 20px 0;
+            }
+            .baseButton {
+                padding: 12px 60px;
+                font-size: 14px;
+                width: 100%;
+                @media only screen and (max-width: 575px) {
+                    padding: 12px 48px;
+                }
+            }
+        }
+        p {
+            font-size: 14px;
+            line-height: 24px;
+            color: $grey;
+            text-align: left;
+            font-family: 'open_sansregular';
+        }
+    }
+}
+
+//ABOUT-US//
+.aboutUs {
+    .productBanner {
+        padding: 30px 0 60px 0;
+        width: 100%;
+        h2 {
+            font-size: 26px;
+            margin: 0 0 16px 0;
+            font-family: 'poppinsmedium';
+        }
+        img {
+            &.rightimg {
+                float: right;
+                width: 295px;
+                margin: 0 0 0 28px;
+                @media(max-width: 575px) {
+                    width: 100%;
+                }
+            }
+        }
+        p {
+            font-size: 14px;
+            line-height: 24px;
+            color: $grey;
+            margin: 0 0 10px;
+            font-family: 'open_sansregular';
+        }
+    }
+}
+
+// contact//
+.contact {
+    .textWigits {
+        padding: 50px 0;
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+            .callus {
+                width: 100% !important;
+                &:first-child {
+                    border-right: none !important;
+                    border-bottom: 1px solid rgb(220, 220, 220);
+                }
+            }
+        }
+        .callus {
+            &:first-child {
+                border-right: 1px solid rgb(220, 220, 220);
+            }
+            display: flex;
+            padding: 15px;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            width:50%;
+            img {
+                width: auto;
+            }
+            h4 {
+                margin: 20px 0 16px;
+                font-family: 'poppinsmedium';
+                color: $secondary-dark-color;
+            }
+            p {
+                line-height: 20px;
+                color: #464547;
+                margin: 0 0 10px;
+            }
+            .baseButton {
+                padding: 12px 35px;
+                font-size: 13px;
+                font-family: 'open_sansregular';
+            }
+        }
+    }
+    .question {
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        background: #fff;
+        margin-bottom: 30px;
+        .contactFeild {
+            margin: 0 0 18px 0;
+            h2 {
+                color: rgb(0, 0, 0);
+                font-size: 44px;
+                line-height: normal;
+                margin-bottom: 10px;
+                margin-top: 16px;
+                font-family: 'poppinsmedium';
+                text-transform: uppercase;
+                @media screen and (max-width: 1199px) {
+                    font-size: 35px;
+                }
+                @media screen and (max-width: 991px) {
+                    font-size: 28px;
+                }
+                @media screen and (max-width: 767px) {
+                    font-size: 24px;
+                }
+                @media screen and (max-width: 575px) {
+                    font-size: 20px;
+                }
+            }
+            h3 {
+                font-family: 'poppinsmedium';
+                text-transform: uppercase;
+                color: rgb(70, 69, 71);
+                font-size: 20px;
+                line-height: 25px;
+                margin-bottom: 35px;
+                @media screen and (max-width: 1199px) {
+                    font-size: 18px;
+                    line-height: 14px;
+                    margin-bottom: 13px;
+                    margin-top: 0;
+                }
+                @media screen and (max-width: 575px) {
+                    font-size: 14px;
+                    line-height: 14px;
+                    margin-bottom: 13px;
+                    margin-top: 0;
+                }
+            }
+            h5 {
+                color: $primary-color;
+                font-family: 'open_sansbold';
+                margin: 0 0 7px 0;
+            }
+            input {
+                padding: 5px;
+                font-size: 15px;
+                width: 100%;
+                background-color: #f8f8f8;
+                border: 2px solid #ddd;
+                border-radius: 4px;
+                height: 44px;
+                color: $primary-dark-color;
+                font-size: 15px;
+            }
+            select {
+                font-size: 15px;
+                width: 100%;
+                background-color: #f8f8f8;
+                border: 2px solid #ddd;
+                border-radius: 4px;
+                height: 44px;
+                color: $grey2 !important;
+                padding: 8px 15px;
+                font-size: 15px;
+            }
+            textarea {
+                font-size: 15px;
+                width: 100%;
+                background-color: #f8f8f8;
+                border: 2px solid #ddd;
+                border-radius: 4px;
+                color: $grey2 !important;
+                font-size: 15px;
+                resize: none;
+                padding: 5px;
+                height: 200px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            .baseButton {
+                width: 200px
+            }
+        }
+    }
+}
+
+// data recovery //
+.dataRecoverydelta {
+    .productData {
+        a {
+            color: $grey3;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        padding: 50px 0;
+        img {
+            &.rightimg {
+                float: right;
+                width: 295px;
+                margin: 0 0 0 28px;
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        h5 {
+            line-height: 26px;
+            color: #777;
+            font-family: 'open_sansbold';
+        }
+        p {
+            line-height: 24px;
+            color: #777;
+            margin: 0 0 10px;
+            @media screen and (max-width: 480px) {
+                text-align: justify;
+                line-height: 26px;
+            }
+        }
+        h2 {
+            font-size: 26px;
+            margin: 0 0 16px 0;
+            font-family: 'open_sansbold';
+            line-height: 26px;
+            @media screen and (max-width: 767px) {
+                font-size: 22px;
+            }
+        }
+        h3 {
+            font-size: 18px;
+            line-height: 26px;
+            font-family: 'poppinsmedium';
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        h4 {
+            line-height: 26px;
+            color: $secondary-dark-color;
+            text-transform: uppercase;
+            font-family: 'poppinsmedium';
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .listing {
+            margin: 0 0 12px 0;
+            ul {
+                padding: 0px 0 0 38px;
+                list-style: none;
+                margin: 0;
+                li {
+                    font-size: 14px;
+                    line-height: 28px;
+                    font-family: 'open_sansregular';
+                    a {
+                        &::before {
+                            content: "\2022";
+                            color: $grey3;
+                            font-weight: bold;
+                            display: inline-block;
+                            width: 1em;
+                            margin-left: -1em;
+                        }
+                    }
+                    &::before {
+                        content: "\2022";
+                        color: $primary-color;
+                        font-weight: bold;
+                        display: inline-block;
+                        width: 1em;
+                        margin-left: -1em;
+                    }
+                }
+            }
+        }
+        .baseButton {
+            padding: 6px 12px;
+        }
+    }
+}
+
+// assus-laptop-repir//

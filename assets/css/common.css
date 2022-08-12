@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: normal;
+  font-family: "open_sansregular";
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+p {
+  font-size: 14px;
+}
+@media screen and (max-width: 480px) {
+  p {
+    text-align: justify;
+    line-height: 26px;
+  }
+}
+
+h1 {
+  font-size: 36px;
+}
+@media only screen and (max-width: 575px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+h2 {
+  font-size: 28px;
+}
+@media only screen and (max-width: 575px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+}
+@media only screen and (max-width: 575px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+.baseButton {
+  font-size: 16px;
+  padding: 10px 18px;
+  background-color: #f15a24;
+  color: #fff;
+  border: 1px solid #f15a24;
+  border-radius: 4px;
+  font-family: "open_sansregular";
+  margin: 0 0 18px 0;
+}
+.baseButton:hover {
+  background: #002858;
+  color: #fff;
+  transition: all 0.5s;
+  border: 1px solid #002858;
+}
+
+.baseButton2 {
+  background: #efefef;
+  color: #666;
+  border: 2px solid #efefef;
+  padding: 12px 20px;
+  font-family: "open_sansbold";
+  border-radius: 4px;
+  font-size: 13px;
+}
+.baseButton2:hover {
+  background: transparent;
+  border: 2px solid #efefef;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .baseButton2 {
+    padding: 10px 17px 15px;
+    font-size: 12px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #f15a24;
+}
+
+.boxShadow {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.commonBanner {
+  background-image: url(../../assets/images/innerimage1.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 210px;
+  position: relative;
+}
+.commonBanner h2 {
+  font-family: "poppinssemibold";
+  position: absolute;
+  color: #fff;
+  bottom: 20px;
+  text-transform: uppercase;
+}
+
+.queriesAbout {
+  background-color: #000;
+  width: 100%;
+  padding: 18px 0;
+}
+.queriesAbout .yourComputer h4 {
+  font-size: 22px;
+  color: #fff;
+  line-height: normal;
+  margin: 0 20px 0px 0;
+}
+@media (max-width: 991px) {
+  .queriesAbout .yourComputer h4 {
+    font-size: 17px;
+    margin: 5px 0 15px 0;
+  }
+}
+@media (max-width: 991px) {
+  .queriesAbout .yourComputer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 12px 0 20px 0;
+  }
+}
